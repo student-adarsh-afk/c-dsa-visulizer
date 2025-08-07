@@ -1,21 +1,16 @@
 #if !defined(DSA_STACK_H)
-#define DSA_STACK_H
 
-#include <stdbool.h>
-#include <stddef.h>
 
-typedef struct Stack {
-    int top;
-    size_t capacity;
-    int *array;
-} Stack;
+#define RED "\033[1;31m"
+#define GREEN "\033[1;32m"
+#define RESET "\033[0m"  
 
-Stack *create_stack(size_t capacity);
-bool is_full(Stack *stack);
-bool is_empty(Stack *stack);
-void push(Stack *stack, int item);
-int pop(Stack *stack);
-int peek(Stack *stack);
-void free_stack(Stack *stack);
+void clearScreen();
+void printStack();
+void push(int value);
+void pop();
+void stackMenu();
+
+
 
 #endif // DSA_STACK_H

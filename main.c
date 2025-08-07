@@ -3,17 +3,47 @@
 
 #include "../include/stack.h"
 
+
+
+
+void mainMenu(){
+    clearScreen();
+    printf("===welcome to data structure visualizer===\n");
+    printf("1. Stack\n");
+    printf("2. Queue\n");
+    printf("3. Linked List\n");
+    printf("4. Exit\n");
+
+
+    printf( "Enter your choice: " );
+    int choice;
+    scanf("%d", &choice);
+    switch (choice) {
+        case 1:
+            clearScreen();
+            stackMenu();
+            break;
+        case 2:
+            clearScreen();
+            // queueMenu(); // Placeholder for queue menu
+            break;
+        case 3:
+            clearScreen();
+            // linkedListMenu(); // Placeholder for linked list menu
+            break;
+        case 4:
+            clearScreen();
+            printf("Exiting...\n");
+            exit(0);
+        default:
+            clearScreen();
+            printf("Invalid choice! Please try again.\n");
+            mainMenu();
+    }
+}
+
 int main() {
-    Stack *stack = create_stack(10);
-    push(stack, 1);
-    push(stack, 2);
-    push(stack, 3);
-    push(stack, 4);
-    push(stack, 5);
-    printf("%d\n", pop(stack));
-    printf("%d\n", pop(stack));
-    printf("%d\n", pop(stack));
-    printf("%d\n", pop(stack));
-    printf("%d\n", pop(stack));
-    free_stack(stack);
+
+    mainMenu();
+    return 0;
 }
