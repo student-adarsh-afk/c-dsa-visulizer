@@ -1,91 +1,86 @@
-DSA Visualizer – Terminal-Based Project in C
-DSA Visualizer is a collaborative open-source project that aims to implement and visualize core Data Structures and Algorithms (DSA) using C, directly in the terminal — without any external libraries.
+🧠 DSA Visualizer (C – Terminal Edition)
+DSA Visualizer is an open-source terminal-based tool that helps beginners learn and visualize core Data Structures and Algorithms using pure C — without any external libraries or graphics frameworks.
 
-🔹 Project Overview
-This project helps beginners and intermediate programmers understand how DSA works internally by showing step-by-step visualizations directly in the terminal.
+📌 Why This Project?
+Understanding DSA isn't always easy by just reading theory. This project offers a visual and interactive way to see how stacks, queues, linked lists, trees, and sorting algorithms work — all inside your terminal window.
 
-All components are written in pure C, using standard input/output, ANSI escape codes for simple visuals, and clean code architecture.
+🚀 What You'll Learn
+By using or contributing to this project, you will gain hands-on experience with:
 
-🔹 Features
-Terminal-based interactive interface
+✅ Core DSA concepts: stacks, queues, linked lists, trees, sorting
 
-Pure C implementation (no external libraries)
+✅ C programming best practices
 
-Visualization of basic operations:
+✅ Using ANSI escape codes for basic terminal UI
 
-Push, Pop in Stack
+✅ Writing clean, modular, and maintainable code
 
-Enqueue, Dequeue in Queue
+✅ Collaborating on open-source using Git and GitHub
 
-Insert, Delete, Traverse in Linked List
+🧰 Features
+🔹 Fully written in C, no external dependencies
 
-Tree Traversals
+🔹 Cross-platform support via standard terminal
 
-Sorting Visuals (e.g., Bubble Sort)
+🔹 Simple but effective ASCII-based visualization
 
-Clean code and modular structure for easy contributions
+🔹 Organized and modular code structure
 
-🔹 What You’ll Learn
-By contributing or exploring this project, you will gain:
+🔹 Open to contributors at all skill levels
 
-Deeper understanding of how DSA works under the hood
+📚 Currently Available Visualizations
+Category	Visualizations Implemented
+Stack	Push, Pop
+Queue	Enqueue, Dequeue
+Sorting	Bubble Sort (planned)
+Linked List	Insertion, Deletion (planned)
+Trees	Traversals (planned)
+Graph	BFS, DFS (planned)
 
-Skills in writing clean and modular C code
+✅ = Completed
+🛠️ = In Progress / Planned
 
-Techniques to build text-based UIs using terminal formatting
+🛠 Getting Started
+🔧 Requirements
+GCC compiler
 
-Hands-on experience with collaborative coding via Git/GitHub
+Any terminal with ANSI support (Linux, macOS, Windows with Git Bash or WSL)
 
-Basics of version control and project structuring
+🤝 How to Contribute
+We’d love your help to expand this visualizer! You can contribute by:
 
-🔹 How to Contribute
-We welcome contributions! You can:
+Implementing a new DSA visualization
 
-Implement a new DSA visualization
+Refactoring and optimizing existing code
 
-Refactor existing code
+Improving UI/UX with terminal tricks
 
-Improve UI and UX (better prompts, highlighting, etc.)
+Writing better documentation or tutorials
 
-Fix bugs or enhance performance
+Fixing bugs or improving cross-platform support
 
-Write documentation or guides
-
-Steps to contribute:
+🔄 Contribution Steps
 Fork the repository
 
 Clone your fork locally
 
-Create a new branch (git checkout -b feature-name)
+Create a new branch
 
-Commit your changes (git commit -m "Add: implemented stack pop visualization")
+Make your changes and commit
 
 Push to your fork
 
-Open a pull request
+Open a Pull Request 
+💡 Ideas You Can Work On
+ Circular Queue implementation
 
-🔹 Requirements
-GCC Compiler
+ Singly/Double Linked List with animation
 
-Unix-based or Windows terminal with ANSI escape code support
+ Recursive Tree Traversals
 
-🔹 Getting Started
-bash
-Copy
-Edit
-git clone https://github.com/your-username/dsa-visualizer-c.git
-cd dsa-visualizer-c
-gcc main.c -o dsa
-./dsa
-🔹 Project Ideas (In Progress / For Contribution)
- Stack Visualizer
+ Insertion Sort / Selection Sort visualizations
 
- Queue Visualizer
+ Graph traversal animations
 
- Singly Linked List Visualizer
+ Add command-line input or menu UI
 
- Binary Tree Traversals
-
- Sorting Algorithms (Bubble Sort, Insertion Sort, etc.)
-
- Graph BFS/DFS (Text-based)
