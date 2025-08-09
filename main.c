@@ -2,12 +2,10 @@
 #include <stdlib.h>
 
 #include "../include/stack.h"
-
-
-
+#include "../include/queue.h"
 
 void mainMenu(){
-    clearScreen();
+    
     printf("===welcome to data structure visualizer===\n");
     printf("1. Stack\n");
     printf("2. Queue\n");
@@ -25,7 +23,7 @@ void mainMenu(){
             break;
         case 2:
             clearScreen();
-            // queueMenu(); // Placeholder for queue menu
+            queueMenu(); // Placeholder for queue menu
             break;
         case 3:
             clearScreen();
@@ -43,7 +41,7 @@ void mainMenu(){
 }
 
 int main() {
-
+    
     mainMenu();
     return 0;
 }

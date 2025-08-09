@@ -4,7 +4,7 @@
 		{
 			"type": "shell",
 			"label": "Build C Stack App",
-			"command": "gcc main.c structures/stack.c  -Iinclude -o build.exe",
+			"command": "gcc main.c structures/stack.c structures/queue.c  -Iinclude -o build.exe",
 			"group": "build",
 			"problemMatcher": [
 				"$gcc"
