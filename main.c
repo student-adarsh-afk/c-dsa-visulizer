@@ -1,8 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
 
-#include "../include/stack.h"
 #include "../include/queue.h"
+#include "../include/stack.h"
+#include "../include/linked_list.h"
+#include "../include/utils.h"
+#include "../include/merge_sort.h"
 
 void mainMenu(){
     
@@ -10,7 +11,9 @@ void mainMenu(){
     printf("1. Stack\n");
     printf("2. Queue\n");
     printf("3. Linked List\n");
-    printf("4. Exit\n");
+    printf("4. Binomial Search\n");
+    printf("5. Merge Sort\n");
+    printf("6. Exit\n");
 
 
     printf( "Enter your choice: " );
@@ -27,12 +30,20 @@ void mainMenu(){
             break;
         case 3:
             clearScreen();
-            // linkedListMenu(); // Placeholder for linked list menu
+            linkedListMenu(); // Placeholder for linked list menu
             break;
         case 4:
+            system("binomial_search.exe");
+            break;
+        case 5:
+            clearScreen();
+            mergeMenu();
+            break;
+        case 6:
             clearScreen();
             printf("Exiting...\n");
             exit(0);
+
         default:
             clearScreen();
             printf("Invalid choice! Please try again.\n");

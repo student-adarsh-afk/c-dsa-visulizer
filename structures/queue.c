@@ -1,7 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
+
 #include "queue.h"
-#include "stack.h"
+#include "../include/utils.h"
+
 
 int front = 0;
 int rear = -1;

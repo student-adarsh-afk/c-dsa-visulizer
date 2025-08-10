@@ -1,5 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include"../include/stack.h"
+#include "../include/utils.h"
+#include"../include/utils.h"
 #include <unistd.h>  // for sleep()
 
 #define MAX 5
@@ -7,15 +8,7 @@
 int stack[MAX];
 int top = -1;
 
-// ANSI color codes (optional)
-#define RED "\033[1;31m"
-#define GREEN "\033[1;32m"
-#define RESET "\033[0m"      //
 
-// Function to clear screen (optional)
-void clearScreen() {
-    printf("\033[2J\033[1;1H");  // ANSI escape code to clear terminal
-}
 
 // Stack Visual Display
 void printStack() {

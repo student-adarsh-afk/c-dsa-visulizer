@@ -1,11 +1,10 @@
 #if !defined(DSA_STACK_H)
 
+#include"utils.h"
 
-#define RED "\033[1;31m"
-#define GREEN "\033[1;32m"
-#define RESET "\033[0m"  
 
-void clearScreen();
+
+
 void printStack();
 void push(int value);
 void pop();
